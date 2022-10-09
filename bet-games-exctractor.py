@@ -38,3 +38,6 @@ def save_data(loca_file):
         f.write(queue.get())
 
 
+if __name__ == '__main__':
+    find_data("https://www.bet.co.za/bet-games/")
+    save_data('data_scraping.txt')
