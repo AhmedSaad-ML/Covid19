@@ -32,3 +32,9 @@ def collect_data(all_titles, all_samples, all_times):
         queue.append(all_times[index])
     return
 
+
+def save_data(loca_file):
+    with open(loca_file, 'w+') as f:
+        f.write(queue.get())
+
+
