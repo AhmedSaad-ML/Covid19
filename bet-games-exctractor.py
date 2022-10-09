@@ -17,3 +17,11 @@ def find_data(url):
     all_times = driver.find_elements_by_css_selector('div.last-results-item-time')
 
     collect_data(all_titles, all_samples, all_times)
+
+
+def get_driver(url):
+    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    driver.get(url)
+    return driver
+
+
