@@ -25,3 +25,10 @@ def get_driver(url):
     return driver
 
 
+def collect_data(all_titles, all_samples, all_times):
+    for index, sample in enumerate(all_samples):
+        balls = sample.find_elements_by_css_selector('span.ball-item').text
+        queue.put(balls)
+        queue.append(all_times[index])
+    return
+
