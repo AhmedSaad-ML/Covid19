@@ -3,7 +3,6 @@ First step : collect the data from world meters website  https://www.worldometer
 
 Second step : create a parent class with init function.
 
-Done Hanon (4-10-2022)
 
 
 
